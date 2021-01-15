@@ -21,6 +21,10 @@ class App extends Component {
      
      }, 1000);
    }
+
+   componentWillUnmount(){
+     clearInterval(this.state.timer);
+   }
   render() { 
     return ( 
       <div className="App">
